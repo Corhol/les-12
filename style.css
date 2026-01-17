@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0px;
+  align-items: center;
+  color: red;
+  justify-content: center;
+  padding: 50px;
+  font-size: 50px;
+  display: flex;
+  text-shadow: 1px 1px 0px black;
+}
+
+.NEOTHEBALDIRD {
+  width: auto;
+  height: 500px;
+  background-color: orange;
+  background-image: url("./karniki/Trio-angry-birds.png"),
+    url("./karniki/front_grass.png"), url("./karniki/middle_grass.png"),
+    url("./karniki/back_grass.png"), url("./karniki/front_sky.png"),
+    url("./karniki/back_sky.png"), url("./karniki/under_back_sky.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-size: contain, contain, contain, contain, contain, contain, contain;
+  background-position: bottom, bottom, bottom, bottom, top, top, top;
+}
+
+.hidden {
+  display: none;
+}
+
+.backgrod {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.144);
+  width: 100vw;
+  height: 100vw;
+}
+.modal {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: 100px;
+}

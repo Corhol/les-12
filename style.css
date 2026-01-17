@@ -37,7 +37,10 @@ p {
   left: 0px;
   background-color: rgba(0, 0, 0, 0.144);
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition-duration: 300ms;
+  perspective: 400px;
 }
 .modal {
   width: 400px;
@@ -46,10 +49,17 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%) rotateY(90deg);
   border-radius: 20px;
   justify-content: center;
   display: flex;
   align-items: center;
   padding-bottom: 100px;
+  transition-duration: 500ms;
+}
+.visible {
+  opacity: 1;
+}
+.modalVisual {
+  transform: translateX(-50%) translateY(-50%) rotateY(0deg);
 }
